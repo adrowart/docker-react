@@ -10,7 +10,6 @@ script:
     - docker run -e CI=true pidixit/docker-react npm run test
 
 deploy:
-    edge: true
     provider: elasticbeanstalk
     region: "us-east-2"
     app: "docker"
